@@ -37,6 +37,7 @@ function Home() {
       alert("Item is already in the cart!");
     } else {
       // If the item is not in the cart, add it
+      alert("Item added to card");
       setCart([...cart, item]);
     }
   };
