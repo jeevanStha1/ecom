@@ -1,0 +1,28 @@
+.home{
+    &__menu{
+        ul{
+            list-style: none;
+            font-weight: 700;
+            li{
+                text-transform: capitalize;
+                cursor: pointer;
+            }
+        }
+    }
+    &__content{
+        .card{
+            min-height: 300px;
+            &__1{
+                .productImg{
+                    max-height: 150px;
+                    width: 100%;
+                }
+            }
+            &__2{
+                max-height: 50%;
+                overflow: hidden;
+                // display: none;
+            }
+        }
+    }
+}

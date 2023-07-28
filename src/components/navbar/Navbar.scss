@@ -1,0 +1,65 @@
+.cart {
+    position: relative;
+
+    small {
+        position: absolute;
+        top: -5px;
+        font-weight: 700;
+    }
+
+    .cart__item {
+        position: absolute;
+        right: 0;
+        background: white;
+        width: 330px;
+        z-index: 1;
+        max-height: 500px;
+        overflow-y: scroll;
+
+        &>div {
+            list-style: none;
+            width: 100%;
+
+            &>div {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                position: relative;
+                gap: 10px;
+                img {
+                    height: 70px;
+                }
+
+                p {
+                    width: 300px;
+                }
+
+                input {
+                    width: 30px;
+                }
+
+                /* Remove increment and decrement buttons from number input */
+                input[type="number"] {
+                    /* For Firefox */
+                    -moz-appearance: textfield;
+                }
+
+                /* For Chrome, Safari, and Opera */
+                input[type="number"]::-webkit-inner-spin-button,
+                input[type="number"]::-webkit-outer-spin-button {
+                    -webkit-appearance: none;
+                    margin: 0;
+                }
+
+                .icon {
+                    position: absolute;
+                    top: -15px;
+                    left: -15px;
+                    color: red;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
